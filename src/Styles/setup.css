@@ -1,0 +1,79 @@
+.setup-overlay {
+  height: 100vh;
+  background-image: url("../assets/game-background.jpg");
+  background-size: 100% 100%;
+}
+
+@media (max-height: 600px) {
+  .setup-overlay {
+    background-size: 100% 150vh;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+
+.setup-overlay h3 {
+  font-size: 2.5vh;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin-top: 30vw;
+}
+
+.setup-overlay p {
+  margin-top: 4vw;
+  font-size: 1vh;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+
+.setup-overlay .cell {
+  border: 0.5px solid silver;
+  width: 16.5vw;
+  height: 16.5vw;
+  margin: 1px;
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+}
+
+.setup-overlay .map {
+  background-size: cover;
+  background-position: center;
+  width: 90vw;
+  height: 85vw;
+  padding-left: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  margin-top: 20vw;
+}
+
+.setup-overlay button {
+  width: 65vw;
+  height: 15vw;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  border: 1px solid transparents;
+  border-radius: 50px;
+  background-image: url("../assets/btn.png");
+  background-size: 100% 100%;
+  margin-top: 7vw;
+  font-size: 2.5vh;
+  font-weight: 900;
+}
+
+.setup-overlay button:hover {
+  background-color: black;
+}
+
+.setup-overlay .disable-btn {
+  background-image: url("../assets/btnDisable.png");
+}
+
+body {
+  background: black;
+}

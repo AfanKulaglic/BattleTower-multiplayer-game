@@ -1,0 +1,66 @@
+@import 'variables'
+    
+.setup-overlay
+    height: 100vh
+    background-image: url('../assets/game-background.jpg')
+    background-size: 100% 100%
+    @media (max-height: 600px)
+        background-size: 100% 150vh
+        background-position: top
+        background-repeat: no-repeat
+
+    h3
+        @include default-font
+        color: white
+        text-align: center
+        margin-top: 30vw
+
+    p
+        margin-top: 4vw
+        @include secondary-font
+        color: white
+        text-align: center
+
+    .cell
+        border: 0.5px solid silver
+        width: 16.5vw
+        height: 16.5vw
+        margin: 1px
+        z-index: 2
+        background-size: cover
+        background-position: center
+
+    .map
+        background-size: cover
+        background-position: center
+        width: 90vw
+        height: 85vw
+        padding-left: 2vw
+        margin-left: auto
+        margin-right: auto
+        z-index: 1
+        margin-top: 20vw
+
+    button
+        width: 65vw
+        height: 15vw
+        color: black
+        margin-left: auto
+        margin-right: auto
+        background: transparent
+        border: 1px solid transparents
+        border-radius: 50px
+        background-image: url('../assets/btn.png')
+        background-size: 100% 100%
+        margin-top: 7vw
+        @include default-font
+
+    button:hover
+        background-color: rgba(0, 0, 0, 1)
+
+    .disable-btn
+            background-image: url('../assets/btnDisable.png')
+
+body 
+    background: black
+

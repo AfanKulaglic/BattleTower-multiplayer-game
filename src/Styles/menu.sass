@@ -1,0 +1,135 @@
+@import 'variables'
+
+//
+
+.loading-overlay
+    height: 100vh
+    width: 100%
+    display: flex
+    flex-direction: column
+    background-size: cover
+    background-position: center
+
+    img
+        width: 230px
+        height: 180px
+        margin-top: 20vh
+        margin-left: auto
+        margin-right: auto
+
+    #loader
+        position: fixed
+        margin-top: auto
+        margin-right: auto
+        margin-left: auto
+
+.menu-overlay
+    height: 100vh
+    width: 100%
+    display: flex
+    flex-direction: column
+    background-size: 100% 100%
+    @media (max-height: 600px)
+        background-size: 100% 150vh
+        background-position: top
+        background-repeat: no-repeat
+
+    .navbar
+        height: 50px
+        color: white
+        padding: 0px
+        display: flex
+        background-size: 100% 100%
+        padding: 10px
+
+        h3
+            margin: 0px
+            padding: 0px
+            padding-left: 1.5vh
+            margin-top: auto
+            margin-bottom: auto
+            @include default-font
+            font-size: 2vh
+
+        p
+            margin: 0px
+            padding-right: 1.5vh
+            @include default-font
+            margin-top: auto
+            margin-bottom: auto
+            font-size: 2vh
+
+            img
+                width: 4vh
+
+    .main
+        margin-bottom: auto
+        display: flex
+        flex-direction: column
+
+        img
+            margin-left: auto
+            margin-right: auto
+
+        #logo
+            width: 25vh
+            height: auto
+            margin-top: -10vh
+
+        button
+            width: 40vw
+            height: 5vh
+            color: black
+            margin-left: auto
+            margin-right: auto
+            background: transparent
+            border: 1px solid transparent
+            border-radius: 50px
+            background-size: 100% 100%
+            @include default-font
+            font-size: 1.5vh
+
+        .row
+            margin-top: 2vh
+            margin-left: 3vw
+            margin-right: 3vw
+
+        .col 
+            display: flex
+            flex-direction: column
+            justify-content: center
+            padding: 10px
+
+            .menu-icon
+                margin-left:auto
+                margin-right:auto
+                height: 12vh
+                margin-bottom: 10px
+
+        .col1
+            background-size: 100% 100%
+            width: 75px
+            height: 200px
+            text-align: center
+
+        .col2
+            margin-left: auto
+            background-size: 100% 100%
+            width: 75px
+            height: 200px
+            text-align: center
+
+        .navigation-icon
+                margin-left:auto
+                margin-right:auto
+                height: 45px
+                width: 45px
+                padding: 1px
+
+        span
+                @include default-font   
+                font-size: 9px     
+                margin-bottom: 30px
+                color: white
+                text-align: center
+
